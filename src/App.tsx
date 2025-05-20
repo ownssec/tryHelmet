@@ -5,7 +5,8 @@ import axios from "axios";
 function App() {
   const [count, setCount] = useState(0);
 
-  const apiUrl = "http://localhost:8001/api/v1";
+  // const apiUrl = "http://localhost:8001/api/v1";
+  const apiUrl = "https://ghi-portal-testing.onrender.com/api/v1";
 
   const loginTest = async () => {
     setCount((count) => count + 1);
