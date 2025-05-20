@@ -7,6 +7,7 @@ function App() {
 
   // const apiUrl = "http://localhost:8001/api/v1";
   const apiUrl = "https://ghi-portal-testing.onrender.com/api/v1";
+  console.warn("DEBUGPRINT[89]: App.tsx:9: apiUrl=", apiUrl);
 
   const loginTest = async () => {
     setCount((count) => count + 1);
@@ -14,6 +15,8 @@ function App() {
       email: "asd@gmail.com",
       password: "e",
     };
+
+    console.warn("DEBUGPRINT[90]: App.tsx:14: setdata=", setdata);
     await axios
       .post(`${apiUrl}/auth/signIn`, setdata)
       .then((res) => {
